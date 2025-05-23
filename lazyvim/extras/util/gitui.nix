@@ -1,3 +1,4 @@
+
 self:
 {
     config,
@@ -17,8 +18,11 @@ self:
         };
 
         config = mkIf cfg.extras.util.gitui.enable {
-            extraPackages = [
-              pkgs.gitui
-            ]
-          }
-    }
+            programs.neovim = {
+
+              extraPackages = [
+                pkgs.gitui
+                ];
+              };
+          };
+    };
