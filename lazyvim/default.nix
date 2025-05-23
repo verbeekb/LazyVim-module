@@ -74,6 +74,7 @@ in
 
     ./extras/util/dot.nix
     ./extras/util/mini-hipatterns.nix
+    ./extras/util/gitui.nix
 
     ./plugins
   ];
