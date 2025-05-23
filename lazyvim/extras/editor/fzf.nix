@@ -14,7 +14,7 @@ in
 {
   options.programs.lazyvim.extras.editor.fzf = {
     enable = mkEnableOption "the editor.fzf extra";
-  };
+  }
 
   config = mkIf cfg.extras.editor.fzf.enable {
     programs.neovim = {
